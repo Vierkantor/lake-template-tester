@@ -7,7 +7,7 @@ defaultTargets = ["Foo"]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
 autoImplicit = false
 relaxedAutoImplicit = false
-linter.mathlibStandardSet = true
+weak.linter.mathlibStandardSet = true
 maxSynthPendingDepth = 3
 
 [[require]]
