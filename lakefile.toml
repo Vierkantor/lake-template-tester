@@ -1,0 +1,19 @@
+name = "foo"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["Foo"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+autoImplicit = false
+relaxedAutoImplicit = false
+linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/Vierkantor/mathlib4.git"
+ref = "cache-position-independent"
+
+[[lean_lib]]
+name = "Foo"
